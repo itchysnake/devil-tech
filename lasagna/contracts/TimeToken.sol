@@ -7,11 +7,12 @@ interface ITimeToken is IERC20 {
     function mint();
     function redeem();
     function undo();
-    event TimeIssued();
+    event TimeIssued(address issuer, uint256);
 }
 
 contract TimeToken is ERC20, ITimeToken {
 
+    address public controlCenter
     address public issuer;
     uint256 public totalSupply;
     uint256 public hours;
@@ -31,11 +32,7 @@ contract TimeToken is ERC20, ITimeToken {
 
     function redeem(uint256 _amount) {
         require(balanceOf(msg.sender) > 0);
-        transfer(msg.sender)
         emit WorkContractCreated
-    }
-
-    function undo(uint256 _amount) {
     }
 
 }
