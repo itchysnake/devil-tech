@@ -1,0 +1,1 @@
+Bank account features instead of crypto wallets. Separate your _person_ and your _assets_ on Ethereum, while gaining access to streamlined asset management solutions.

@@ -1,0 +1,1 @@
+Issue productive hours of time, which can be bought, redeemed, or sold by others. Redemption creates a temporary Work Contract between the issuer and redeemer for work, which requires multi-sig to close.
